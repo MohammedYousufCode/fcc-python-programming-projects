@@ -1,4 +1,4 @@
-** start of main.py **
+#** start of main.py **
 
 def square_root_bisection(num:float,tol=1e-6,max_it=100):
     if num<0:
@@ -30,5 +30,5 @@ square_root_bisection(0.001, 1e-7, 50)
 square_root_bisection(0.001, 1e-7, 50)
 square_root_bisection(81, 1e-3, 50)
 
-** end of main.py **
+#** end of main.py **
 

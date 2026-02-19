@@ -1,4 +1,4 @@
-** start of main.py **
+#** start of main.py **
 
 def selection_sort(array):
     n = len(array)
@@ -18,5 +18,5 @@ def selection_sort(array):
     
 
 
-** end of main.py **
+#** end of main.py **
 

@@ -1,4 +1,4 @@
-** start of main.py **
+#** start of main.py **
 
 import math
 class Rectangle:
@@ -62,5 +62,5 @@ rect.set_width(16)
 print(rect.get_amount_inside(sq))
 
 
-** end of main.py **
+#** end of main.py **
 

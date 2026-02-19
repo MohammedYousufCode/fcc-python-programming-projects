@@ -1,4 +1,4 @@
-** start of main.py **
+
 
 def dfs_n_queens(n):
     # If n is less than 1, return empty list
@@ -34,5 +34,5 @@ def dfs_n_queens(n):
     dfs(0, [])
     return solutions
 
-** end of main.py **
+
 

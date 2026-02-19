@@ -1,4 +1,4 @@
-** start of main.py **
+#** start of main.py **
 
 def verify_card_number(card_number):
     cleaned_card_number=card_number.replace("-","").replace(" ","")
@@ -22,5 +22,5 @@ verify_card_number('4111-1111-1111-1111')
 
         
 
-** end of main.py **
+#* end of main.py **
 

@@ -1,4 +1,4 @@
-** start of main.py **
+#** start of main.py **
 
 def hanoi_solver(no_of_disks):
     # Initialize rods
@@ -27,5 +27,5 @@ hanoi_solver(3)
 
 
 
-** end of main.py **
+#** end of main.py **
 

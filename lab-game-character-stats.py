@@ -1,4 +1,4 @@
-** start of main.py **
+
 
 class GameCharacter:
     def __init__(self,name):
@@ -50,5 +50,4 @@ class GameCharacter:
         return (f"Name: {self._name}\nLevel: {self._level}\nHealth: {self._health}\nMana: {self._mana}")
 
 
-** end of main.py **
 

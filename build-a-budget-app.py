@@ -1,4 +1,3 @@
-** start of main.py **
 
 
 class Category:
@@ -90,5 +89,4 @@ auto.withdraw(300, "fuel")
 print(create_spend_chart([food, clothing, auto]))
 print(food,"\n",clothing,"\n",auto)
 
-** end of main.py **
 

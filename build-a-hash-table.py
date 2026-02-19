@@ -1,4 +1,3 @@
-** start of main.py **
 
 class HashTable:
     def __init__(self):
@@ -41,5 +40,4 @@ hi.remove('rea')
 print(hi.collection)
 print(hi.lookup('golf'))
 
-** end of main.py **
 

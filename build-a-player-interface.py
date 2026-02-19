@@ -1,4 +1,3 @@
-** start of main.py **
 
 from abc import ABC, abstractmethod
 import random
@@ -30,5 +29,4 @@ class Pawn(Player):
         # Add diagonal moves: Up-Left, Up-Right, Down-Left, Down-Right
         self.moves += [(-1, 1), (1, 1), (-1, -1), (1, -1)]
 
-** end of main.py **
 
