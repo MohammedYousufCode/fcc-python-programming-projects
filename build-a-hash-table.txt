@@ -1,0 +1,45 @@
+** start of main.py **
+
+class HashTable:
+    def __init__(self):
+        self.collection={}
+    def hash(self,value:str) -> int:
+        if not isinstance(value,str) or value is "":
+            raise TypeError("value must be string and contains at least 1 length ")
+        else:
+            return sum(ord(char) for char in value)
+            
+    def add(self,key,value):
+        if not isinstance(key,str) or key == "":
+            raise TypeError("key is need to be non empty string")
+        hashed_key=self.hash(key)
+        if hashed_key not in self.collection:
+            self.collection[hashed_key]={}
+        self.collection[hashed_key][key]=value
+        return hashed_key
+    def remove(self,key):
+        hashed_key=self.hash(key)
+        if hashed_key in self.collection:
+            if self.collection[hashed_key]:
+                del self.collection[hashed_key][key]
+            else:
+                return
+    def lookup(self,key):
+        hashed_key=self.hash(key)
+        if hashed_key in self.collection:
+            if key in self.collection[hashed_key]:
+                return self.collection[hashed_key][key]
+            else:
+                return None
+        else:
+            return None
+hi=HashTable()
+hi.add('dear','friends')
+hi.add('read','book')
+hi.add('golf', 'sport')
+hi.remove('rea')
+print(hi.collection)
+print(hi.lookup('golf'))
+
+** end of main.py **
+

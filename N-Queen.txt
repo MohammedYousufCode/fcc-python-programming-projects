@@ -1,0 +1,38 @@
+** start of main.py **
+
+def dfs_n_queens(n):
+    # If n is less than 1, return empty list
+    if n < 1:
+        return []
+
+    solutions = []
+
+    def is_safe(row, col, board):
+        # Check previous rows
+        for r in range(row):
+            c = board[r]
+            # Same column
+            if c == col:
+                return False
+            # Same diagonal
+            if abs(c - col) == abs(r - row):
+                return False
+        return True
+
+    def dfs(row, board):
+        # If all rows are filled, add solution
+        if row == n:
+            solutions.append(board[:])
+            return
+        # Try placing queen in each column
+        for col in range(n):
+            if is_safe(row, col, board):
+                board.append(col)
+                dfs(row + 1, board)
+                board.pop()
+
+    dfs(0, [])
+    return solutions
+
+** end of main.py **
+
